@@ -21,7 +21,7 @@ const BottomNav = () =>{
                 <li>
                     <NavLink to="/shop">
                     <i className="iconfont icon-shop"></i>
-                        hop
+                        Shop
                     </NavLink>
                 </li>
                 <li>

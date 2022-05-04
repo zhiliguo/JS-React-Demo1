@@ -1,3 +1,4 @@
+import axios from "axios"
 import React,{ useState,useEffect } from "react"
 import api from "../../../api"
 import HomeHotView from "../HomeHotView"
@@ -8,38 +9,31 @@ const HomeHotList = () =>{
     const [hot2List,setHot2List] = useState([])
 
      /**
-     * get hot1
+     * get hot1 Data
      */
-      useEffect(() =>{
-        api.getHomtHot1().then(res => {
-            if(res.data.status === 200){
-                setHot1List(res.data.result)
-            }
+    useEffect(()=>{
+        axios.get("http://localhost:5566/api/Home/hot1").then(res => {
+            setHot1List(res.data.result)
         })
-    },[])//need to had [] incase if change data it will render again and it will enter dead loop
-
+    })
     /**
-     * get hot2
+     * get hot2 Data
      */
-     useEffect(() =>{
-        api.getHomtHot2().then(res => {
-            if(res.data.status === 200){
-                setHot2List(res.data.result)
-            }
+    useEffect(()=>{
+        axios.get("http://localhost:5566/api/Home/hot2").then(res => {
+            setHot2List(res.data.result)
         })
-    },[])
-
-
+    })
     return(
         <div>
             {
                 hot1List.length > 0 ?
-                <HomeHotView data={ hot1List } title={ '热门商品' }/> :
+                <HomeHotView data={ hot1List } title={ 'Hot Sale Products' }/> :
                 <div>Waiting for data loading</div>
             }
             {
                 hot2List.length > 0 ?
-                <HomeHotView data={ hot2List } title={ '新品推荐' }/> :
+                <HomeHotView data={ hot2List } title={ 'New Products Recommand' }/> :
                 <div>Waiting for data loading</div>
             }
         </div>

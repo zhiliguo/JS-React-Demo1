@@ -2,53 +2,53 @@ module.exports = {
     hot1: [
         {          
             id: Math.random().toString().slice(2), //confirme it later!
-            title: "储物柜",
+            title: "Storage Box",
             img: "http://iwenwiki.com/api/livable/homehot/img_chuwugui.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         },
         {
             id: Math.random().toString().slice(2),
-            title: "照明灯",
+            title: "Illuminations",
             img: "http://iwenwiki.com/api/livable/homehot/img_zhaoming.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         },
         {
             id: Math.random().toString().slice(2),
-            title: "抱枕",
+            title: "Pillow",
             img: "http://iwenwiki.com/api/livable/homehot/img_baozhen.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         },
         {
             id: Math.random().toString().slice(2),
-            title: "镜子",
+            title: "Mirror",
             img: "http://iwenwiki.com/api/livable/homehot/img_jingzi.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         }
     ],
     hot2: [
         {
             id: Math.random().toString().slice(2),
-            title: "落地灯",
+            title: "Floor lamp",
             img: "http://iwenwiki.com/api/livable/homehot/img_luodideng.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         },
         {
             id: Math.random().toString().slice(2),
-            title: "置物架",
+            title: "Shelf",
             img: "http://iwenwiki.com/api/livable/homehot/img_zhiwujia.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         },
         {
             id: Math.random().toString().slice(2),
-            title: "矮脚灯",
+            title: "Stump Lamp",
             img: "http://iwenwiki.com/api/livable/homehot/img_aijiaodeng.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         },
         {
             id: Math.random().toString().slice(2),
-            title: "毛巾",
+            title: "Towl",
             img: "http://iwenwiki.com/api/livable/homehot/img_maojin.png",
-            link: "http://www.iwenwiki.com"
+            link: "https://www.ikea.com/jp/en/"
         }
     ]
 }
